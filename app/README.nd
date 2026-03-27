@@ -28,3 +28,4 @@ Este endpoint consulta la base de datos `liga`, relaciona las tablas `equipos` y
 ### Construcción de la imagen
 ```bash
 docker build -t api-liga .
+Este proyecto ha sido realizado por Víctor Vázquez
