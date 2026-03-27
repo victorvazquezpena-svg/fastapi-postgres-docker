@@ -1,0 +1,30 @@
+# FastAPI + PostgreSQL + Docker en Linux
+
+## Descripción
+Este proyecto consiste en el despliegue de una API REST desarrollada en Python con FastAPI, ejecutada dentro de un contenedor Docker y conectada a una base de datos PostgreSQL instalada en el host Linux.
+
+## Tecnologías utilizadas
+- Ubuntu 24
+- Docker
+- PostgreSQL
+- Python
+- FastAPI
+- psycopg2-binary
+
+## Estructura del proyecto
+- `app/main.py` → código principal de la API
+- `app/requirements.txt` → dependencias necesarias
+- `app/Dockerfile` → definición de la imagen Docker
+
+## Funcionamiento
+La aplicación expone un endpoint principal:
+
+- `/clasificacion`
+
+Este endpoint consulta la base de datos `liga`, relaciona las tablas `equipos` y `clasificacion`, y devuelve los resultados en formato JSON.
+
+## Ejecución
+
+### Construcción de la imagen
+```bash
+docker build -t api-liga .
